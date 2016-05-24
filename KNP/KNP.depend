@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1464120625 source:c:\users\michal\desktop\knp projekt\program\knp\main.cpp
+	<iostream>
+	"KNP.h"
+
+1464121202 source:c:\users\michal\desktop\knp projekt\program\knp\src\backpack.cpp
+	"Backpack.h"
+	<iostream>
+
+1464119512 c:\users\michal\desktop\knp projekt\program\knp\include\backpack.h
+	"Item.h"
+	<vector>
+
+1464102222 c:\users\michal\desktop\knp projekt\program\knp\include\list.h
+	"Item.h"
+
+1464114007 c:\users\michal\desktop\knp projekt\program\knp\include\item.h
+	<string>
+
+1464114007 source:c:\users\michal\desktop\knp projekt\program\knp\src\item.cpp
+	"Item.h"
+	<iostream>
+
+1464120927 source:c:\users\michal\desktop\knp projekt\program\knp\src\knp.cpp
+	"KNP.h"
+	"Shop.h"
+	<iostream>
+
+1464116693 c:\users\michal\desktop\knp projekt\program\knp\include\knp.h
+	"Shop.h"
+	"Backpack.h"
+
+1464100399 source:c:\users\michal\desktop\knp projekt\program\knp\src\list.cpp
+	"List.h"
+
+1464118483 source:c:\users\michal\desktop\knp projekt\program\knp\src\shop.cpp
+	"Shop.h"
+	<fstream>
+	<iostream>
+
+1464116151 c:\users\michal\desktop\knp projekt\program\knp\include\shop.h
+	<string>
+	"Item.h"
+
