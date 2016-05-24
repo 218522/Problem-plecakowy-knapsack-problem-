@@ -17,7 +17,7 @@ void KNP::KNP_bruteforce(){
     int suma_wartosci = 0;
 
     KNP_bruteforce_source(0, used_item, item_set, suma_wartosci);
-    std::cout<<"FINISH"<<endl;
+    //std::cout<<"FINISH"<<endl;
 }
 
 void KNP::KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_set, int &suma_wartosci){
@@ -34,7 +34,7 @@ void KNP::KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_s
             int lokalna_suma_wartosci = 0;
             for(int j=0; j<shop.get_number_of_items(); j++){
                 if((used_item[item_set[j]] != 1) && (waga_wartosci + shop.get_Item_array()[j].get_size() <= backpack.get_capacity())){
-                    std::cout<<"ANNA "<<item_set[j]<<endl;
+                    //std::cout<<"ANNA "<<item_set[j]<<endl;
                     used_item[item_set[j]] = 1;
                     waga_wartosci += shop.get_Item_array()[j].get_size();
                     lokalna_suma_wartosci += shop.get_Item_array()[j].get_value();
@@ -45,7 +45,7 @@ void KNP::KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_s
                     for(int k = 0; k<shop.get_number_of_items(); k++){
                         if(used_item[k]==1){
                             backpack.get_Item_array().push_back(shop.get_Item_array()[k]);
-                            std::cout<<"SIZE"<<backpack.get_Item_array().size()<<endl;
+                            //std::cout<<"SIZE"<<backpack.get_Item_array().size()<<endl;
                         }
                     }
                 }
