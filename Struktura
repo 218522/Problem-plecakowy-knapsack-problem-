@@ -26,7 +26,8 @@ class Backpack
     Backpack(int capacity);   //konstruktor inicjuje pojemność i "wypełni" item_array
   private:
     int capacity;       //pojemność plecaka
-    Item* item_array;   //tablica przedmiotów. Myślałem też nad listą, ale wydaje mi się że na tablicy będzie nam łatwiej pracować.
+    Item* item_array;   <- niech to będzie tablica zapakowanych przedmiotów, albo zrobimy jakiś inny kontener
+                        //tablica przedmiotów. Myślałem też nad listą, ale wydaje mi się że na tablicy będzie nam łatwiej pracować.
 }                       //Poza tym i tak musielibyśmy zająć listą tyle samo (a nawet więcej) pamięci co tablicą.
 
 
@@ -37,4 +38,12 @@ class Item{
     int value;      //wartość przedmiotu
     int size;       //rozmiar przedmiotu
     string name;    //nazwa przedmiotu
+}
+
+class Shop{
+  public:
+    
+  private:
+    string name;
+    Item* Item_array;
 }
