@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Backpack::fill(int capacity)
+void Backpack::set_capacity(int capacity)
 {
     this->capacity = capacity;
 }

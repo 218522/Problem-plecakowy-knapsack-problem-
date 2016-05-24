@@ -1,5 +1,4 @@
-3
+2
 Jubiler
 pierscionek 4 10
 wisiorek 2 8
-dupa 1 1
