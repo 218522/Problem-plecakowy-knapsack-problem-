@@ -42,9 +42,49 @@
 	<string>
 	"Item.h"
 
+1464127214 D
+
 1464126305 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\backpack.cpp
 	"Backpack.h"
 	<iostream>
+
+1464126381 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\main.cpp
+	<iostream>
+	"KNP.h"
+
+1464126381 c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\include\knp.h
+	"Shop.h"
+	"Backpack.h"
+
+1464126381 c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\include\shop.h
+	<string>
+	"Item.h"
+
+1464126381 c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\include\item.h
+	<string>
+
+1464126381 c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\include\backpack.h
+	"Item.h"
+	<vector>
+
+1464126381 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\backpack.cpp
+	"Backpack.h"
+	<iostream>
+
+1464126381 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\item.cpp
+	"Item.h"
+	<iostream>
+
+1464126381 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
+
+1464122767 a73d60d607abc9c9c5470baad3dbe4d537f99
+	"Backpack.h"
+	<iostream>
+	"KNP.h"
+	"Shop.h"
+	<iostream>
+	"Shop.h"
+	"Backpack.h"
 
 1464126305 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\backpack.h
 	"Item.h"
@@ -62,18 +102,22 @@
 	"Shop.h"
 	<iostream>
 
+1464118483 gin/master
+	"Shop.h"
+	<fstream>
+	<iostream>
+
 1464127214 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\knp.h
 	"Shop.h"
 	"Backpack.h"
+
+1464126381 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\shop.cpp
 
 1464116151 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\shop.h
 	<string>
 	"Item.h"
 
 1464118483 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\shop.cpp
-	"Shop.h"
-	<fstream>
-	<iostream>
 
 1464126539 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\main.cpp
 	<iostream>
