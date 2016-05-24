@@ -29,13 +29,12 @@ class Backpack
     Item* item_array;   //tablica przedmiotów. Myślałem też nad listą, ale wydaje mi się że na tablicy będzie nam łatwiej pracować.
 }                       //Poza tym i tak musielibyśmy zająć listą tyle samo (a nawet więcej) pamięci co tablicą.
 
-//Możliwe że do Item potrzebne będzie dodatkowe pole do identyfikacji obiektu (przy np sortowaniu tablicy przedmiotów trudno będzie
-//dotrzeć do tego co gdzie i czym było), wizualnie i ogólnie do zrozumienia dla innych też będzie lepiej jeżeli Item będzie np Swetrem,
-//a nie obiektem o wartości x i rozmiarze y. Proponuję pole string.
+
 class Item{
   public:
     Item(int value, int size);         //konstruktor inicjije przedmiot o zadanych value i size
   private:
     int value;      //wartość przedmiotu
     int size;       //rozmiar przedmiotu
+    string name;    //nazwa przedmiotu
 }
