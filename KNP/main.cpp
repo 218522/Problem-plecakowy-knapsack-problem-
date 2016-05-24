@@ -15,7 +15,7 @@ int main()
 
     sklep.show();
 
-
+    std::cout<<"Tekst w mainie na dole"<<endl;
 
     return 0;
 }
