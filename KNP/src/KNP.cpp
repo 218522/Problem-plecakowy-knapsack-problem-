@@ -2,9 +2,9 @@
 #include "Shop.h"
 #include<iostream>
 
-KNP::KNP(Shop shop, Backpack backpack)
+KNP::KNP(Shop shop, Backpack & backpack)
 {
-    this->backpack = backpack;
+    this->backpack = &backpack;
     this->shop = shop;
 }
 
@@ -17,12 +17,11 @@ void KNP::KNP_bruteforce(){
     int suma_wartosci = 0;
 
     KNP_bruteforce_source(0, used_item, item_set, suma_wartosci);
-    //std::cout<<"FINISH"<<endl;
+    //backpack->show();
 }
-
 void KNP::KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_set, int &suma_wartosci){
     for(int i=0; i<shop.get_number_of_items(); i++){
-        //std::cout<<"Numer wywolania: "<<numer_wywolania<<"--- i: "<<i<<endl;
+        std::cout<<"Numer wywolania: "<<numer_wywolania<<"--- i: "<<i<<endl;
         item_set[numer_wywolania] = i;
         if(numer_wywolania < shop.get_number_of_items()-1){
             numer_wywolania ++;
@@ -30,10 +29,12 @@ void KNP::KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_s
             numer_wywolania --;
         }
         if(numer_wywolania == shop.get_number_of_items()-1){
+            std::cout<<"Wchodze"<<endl;
             int waga_wartosci = 0;
             int lokalna_suma_wartosci = 0;
             for(int j=0; j<shop.get_number_of_items(); j++){
-                if((used_item[item_set[j]] != 1) && (waga_wartosci + shop.get_Item_array()[j].get_size() <= backpack.get_capacity())){
+                std::cout<<"Wchodze #"<<endl;
+                if((used_item[item_set[j]] != 1) && (waga_wartosci + shop.get_Item_array()[item_set[j]].get_size() <= backpack->get_capacity())){
                     //std::cout<<"ANNA "<<item_set[j]<<endl;
                     used_item[item_set[j]] = 1;
                     waga_wartosci += shop.get_Item_array()[j].get_size();
@@ -41,15 +42,15 @@ void KNP::KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_s
                 }
                 if(lokalna_suma_wartosci>suma_wartosci){
                     suma_wartosci = lokalna_suma_wartosci;
-                    backpack.get_Item_array().clear();
+                    backpack->clean();
+                    std::cout<<"ANNA "<<item_set[j]<<endl;
                     for(int k = 0; k<shop.get_number_of_items(); k++){
                         if(used_item[k]==1){
-                            backpack.get_Item_array().push_back(shop.get_Item_array()[k]);
-                            //std::cout<<"SIZE"<<backpack.get_Item_array().size()<<endl;
+                            backpack->add(shop.get_Item_array()[1]);
                         }
                     }
                 }
-                if(waga_wartosci + shop.get_Item_array()[j].get_size() <= backpack.get_capacity())
+                if(waga_wartosci + shop.get_Item_array()[j].get_size() <= backpack->get_capacity())
                     break;
             }
             for(int a=0; a<shop.get_number_of_items(); a++){

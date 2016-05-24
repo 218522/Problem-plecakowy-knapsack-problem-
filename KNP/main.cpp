@@ -8,12 +8,15 @@ int main()
 {
     Shop sklep;
     Backpack plecak;
+    plecak.set_capacity(15);
+    sklep.fill("dane.txt");
+
     KNP KNP_problem(sklep, plecak);
 
-    sklep.fill("dane.txt");
-    plecak.set_capacity(15);
-
     sklep.show();
+
+    //KNP_problem.KNP_bruteforce();
+
 
     std::cout<<"Tekst w mainie na dole"<<endl;
 

@@ -42,11 +42,11 @@
 	<string>
 	"Item.h"
 
-1464122822 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\backpack.cpp
+1464126305 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\backpack.cpp
 	"Backpack.h"
 	<iostream>
 
-1464122833 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\backpack.h
+1464126305 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\backpack.h
 	"Item.h"
 	<vector>
 
@@ -57,12 +57,12 @@
 	"Item.h"
 	<iostream>
 
-1464122883 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
+1464127326 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
 	"KNP.h"
 	"Shop.h"
 	<iostream>
 
-1464122767 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\knp.h
+1464127214 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\knp.h
 	"Shop.h"
 	"Backpack.h"
 
@@ -74,4 +74,8 @@
 	"Shop.h"
 	<fstream>
 	<iostream>
+
+1464126539 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\main.cpp
+	<iostream>
+	"KNP.h"
 

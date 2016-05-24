@@ -9,7 +9,9 @@ class Backpack
         void set_capacity(int capacity); //inicjuje pojemnosc
         void show();
         int get_capacity();
-        std::vector <Item> get_Item_array();
+        void add(Item item);
+        void clean();
+        int size();
     private:
         int capacity;           //pojemnosc
         std::vector <Item> Item_array;         //lista elementow spakowanych

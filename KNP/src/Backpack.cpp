@@ -19,6 +19,12 @@ int Backpack::get_capacity(){
     return capacity;
 }
 
-std::vector <Item> Backpack::get_Item_array(){
-    return Item_array;
+void Backpack::add(Item item){
+    Item_array.push_back(item);
+}
+void Backpack::clean(){
+    Item_array.clear();
+}
+int Backpack::size(){
+    return Item_array.size();
 }
