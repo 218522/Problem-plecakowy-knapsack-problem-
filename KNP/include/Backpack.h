@@ -6,12 +6,12 @@
 class Backpack
 {
     public:
-        void set_capacity(int capacity); //inicjuje pojemnosc
+        int size();
         void show();
+        void clean();
         int get_capacity();
         void add(Item item);
-        void clean();
-        int size();
+        void set_capacity(int capacity); //inicjuje pojemnosc
     private:
         int capacity;           //pojemnosc
         std::vector <Item> Item_array;         //lista elementow spakowanych

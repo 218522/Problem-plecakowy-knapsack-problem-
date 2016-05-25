@@ -6,10 +6,10 @@
 class Shop
 {
     public:
-        void fill(const char* file_name);
         void show();
-        int get_number_of_items();
         Item* get_Item_array();
+        int get_number_of_items();
+        void fill(const char* file_name);
     private:
         string name;
         int number_of_items;

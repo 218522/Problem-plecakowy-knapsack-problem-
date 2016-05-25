@@ -1,17 +1,23 @@
 #ifndef KNP_H
 #define KNP_H
+#include"IKNP.h"
+#include <vector>
 
 #include "Shop.h"
 #include "Backpack.h"
 
-class KNP
+class KNP : public IKNP
 {
     public:
-        KNP(Shop shop, Backpack & backpack);
+        void set_backpack(Backpack & backpack);
+        void add_shop(Shop shop);
+        // Algorytmy rozwiazania problemu
+        Shop Find_best_shop();       //Zwraca sklep o najlepszym wspolczynnku
+        void KNP_approx(Shop shop);
         void KNP_bruteforce();
         void KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_set, int & suma_wartosci);
     private:
-        Shop shop;
+        std::vector <Shop> shop_list;
         Backpack* backpack;
 };
 

@@ -6,20 +6,23 @@ using namespace std;
 
 int main()
 {
-    Shop sklep;
+    Shop Shop1, Shop2, Shop3, Shop4;
+    KNP KNP_problem;
     Backpack plecak;
 
-    sklep.fill("dane.txt");
+    Shop1.fill("Jubiler.txt");
+    Shop2.fill("Miesny.txt");
+    Shop3.fill("RTV_AGD.txt");
+    Shop4.fill("Lumpeks.txt");
+
     plecak.set_capacity(15);
-    KNP KNP_problem(sklep, plecak);
 
-
-    sklep.show();
-
-    KNP_problem.KNP_bruteforce();
-    plecak.show();
-
-    std::cout<<"Tekst w mainie na dole"<<endl;
+    KNP_problem.set_backpack(plecak);
+    KNP_problem.add_shop(Shop1);
+    KNP_problem.add_shop(Shop2);
+    KNP_problem.add_shop(Shop3);
+    KNP_problem.add_shop(Shop4);
+    KNP_problem.Find_best_shop();
 
     return 0;
 }

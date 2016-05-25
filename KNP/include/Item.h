@@ -8,8 +8,8 @@ class Item
 {
     public:
         void show();
-        int get_value();
         int get_size();
+        int get_value();
     private:
         friend class Shop;
         int value;       //Wartosc przedmiotu
