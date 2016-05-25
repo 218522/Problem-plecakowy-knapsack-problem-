@@ -7,6 +7,7 @@ void Item::show(){
     cout<<"  Name: "<<name<<endl;
     cout<<"  Size: "<<size<<endl;
     cout<<"  Value: "<<value<<endl;
+    cout<<"-"<<endl;
 }
 
 int Item::get_value(){

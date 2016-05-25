@@ -15,14 +15,14 @@ int main()
     Shop3.fill("RTV_AGD.txt");
     Shop4.fill("Lumpeks.txt");
 
-    plecak.set_capacity(15);
+    plecak.set_capacity(8);
 
     KNP_problem.set_backpack(plecak);
     KNP_problem.add_shop(Shop1);
     KNP_problem.add_shop(Shop2);
     KNP_problem.add_shop(Shop3);
     KNP_problem.add_shop(Shop4);
-    KNP_problem.Find_best_shop();
 
+    KNP_problem.Thief();
     return 0;
 }

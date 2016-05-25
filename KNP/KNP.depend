@@ -93,13 +93,14 @@
 1464168487 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\item.h
 	<string>
 
-1464114007 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\item.cpp
+1464181904 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\item.cpp
 	"Item.h"
 	<iostream>
 
-1464172307 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
+1464181825 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
 	"KNP.h"
 	"Shop.h"
+	<list>
 	<iostream>
 
 1464118483 gin/master
@@ -107,7 +108,7 @@
 	<fstream>
 	<iostream>
 
-1464172296 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\knp.h
+1464181526 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\knp.h
 	"IKNP.h"
 	<vector>
 	"Shop.h"
@@ -119,9 +120,12 @@
 	<string>
 	"Item.h"
 
-1464118483 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\shop.cpp
+1464181904 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\shop.cpp
+	"Shop.h"
+	<fstream>
+	<iostream>
 
-1464172228 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\main.cpp
+1464181922 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\main.cpp
 	<iostream>
 	"KNP.h"
 

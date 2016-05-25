@@ -28,7 +28,6 @@ void Shop::show(){
     cout<<"     Shop "<<name<<endl;
     for(int i=0; i<number_of_items; i++){
         Item_array[i].show();
-        cout<<"-"<<endl;
     }
 }
 

@@ -9,7 +9,8 @@ void Backpack::set_capacity(int capacity)
 }
 
 void Backpack::show(){
-    cout<<      "Backpack"<<endl;
+    cout<<"     Backpack"<<endl;
+    cout<<"capacity: "<<capacity<<endl;
     for(int i=0; i<Item_array.size(); i++){
         Item_array[i].show();
     }
