@@ -17,6 +17,7 @@ class KNP : public IKNP
         Shop Find_best_shop();       //Zwraca sklep o najlepszym wspolczynnku
         void KNP_approx(Shop shop);  //Algorytm aproksymacyjny dla zlodzieja
         void KNP_bruteforce();
+        void KNP_dynamic(Shop shop); //Algorytm dynamiczny dla z³odzieja
         void KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_set, int & suma_wartosci);
     private:
         std::vector <Shop> shop_list;

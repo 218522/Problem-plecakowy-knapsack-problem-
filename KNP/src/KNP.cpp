@@ -15,7 +15,8 @@ void KNP::set_backpack(Backpack & backpack){
 
 void KNP::Thief(){
     Shop sklep = Find_best_shop();
-    KNP_approx(sklep);
+    //KNP_approx(sklep);
+    KNP_dynamic(sklep);
     cout<<"Podejscie do kradziezy od strony zlodzieja"<<endl;
     cout<<"******************************************"<<endl;
     cout<<"Wybrany sklep: "<<endl;
@@ -72,6 +73,35 @@ void KNP::KNP_approx(Shop shop){
         a_tab[best_item_pos]=-1;
         best_item_a =-1;
     }
+}
+
+void KNP::KNP_dynamic(Shop shop)
+{
+      int current_size =0;
+    //Struktura do przechowywania atrakcyjnosci danego produktu i numeru produktu(numer wskaznika)
+    float* a_tab = new float[shop.get_number_of_items()];
+    int best_item_pos =-1;
+    float best_item_a =-1;
+    //Obliczanie atrakcyjnosci produktu i umieszczanie danych w tablicy
+    for(int i=0; i<shop.get_number_of_items(); i++){
+        //a_tab[i] = shop.get_Item_array()[i].get_value()/shop.get_Item_array()[i].get_size();
+    }
+    for(int j=0; j<shop.get_number_of_items(); j++){
+    if((i>=shop.get_Item_array()[j].get_size()) && (a_tab[i]<a_tab[i-shop.get_Item_array()[j].get_size()]+shop.get_Item_array()[j].get_value()))
+    {
+        a_tab[i]=a_tab[i-shop.get_Item_array()[j].get_size()]+shop.get_Item_array()[j].get_value();
+        best_item_pos=i;
+        best_item_a=a_tab[i];
+    }
+            }
+        //Jezeli damy rade, to pakujemy ten przedmiot
+        if(backpack->get_capacity() >= shop.get_Item_array()[best_item_pos].get_size() + current_size){
+            current_size += shop.get_Item_array()[best_item_pos].get_size();
+            backpack->add(shop.get_Item_array()[best_item_pos]);
+        }
+        //Atrakcyjnosc zbadanego przedmiotu przyrownojemy do 0
+        a_tab[best_item_pos]=-1;
+        best_item_a =-1;
 }
 
 void KNP::KNP_bruteforce(){
