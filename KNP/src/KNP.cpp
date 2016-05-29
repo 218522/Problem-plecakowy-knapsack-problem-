@@ -87,7 +87,7 @@ void KNP::KNP_dynamic(Shop shop)
         //a_tab[i] = shop.get_Item_array()[i].get_value()/shop.get_Item_array()[i].get_size();
     }
     for(int j=0; j<shop.get_number_of_items(); j++){
-    if((i>=shop.get_Item_array()[j].get_size()) && (a_tab[i]<a_tab[i-shop.get_Item_array()[j].get_size()]+shop.get_Item_array()[j].get_value()))
+    if((i>=shop.get_Item_array()[j].get_size()) && (a_tab[i]<a_tab[i-shop.get_Item_array()[j].get_size()]+shop.get_Item_array()[j].get_value())) //jesli item miesci sie w plecaku i jego obecnosc zwieksza jego watosc to dodaj
     {
         a_tab[i]=a_tab[i-shop.get_Item_array()[j].get_size()]+shop.get_Item_array()[j].get_value();
         best_item_pos=i;
