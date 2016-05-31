@@ -48,7 +48,11 @@
 	"Backpack.h"
 	<iostream>
 
+<<<<<<< HEAD
 1464732958 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\main.cpp
+=======
+1464345892 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\main.cpp
+>>>>>>> 166e155f48f2811ec70ca9704e4fe543850af0d0
 	<iostream>
 	"KNP.h"
 
@@ -77,7 +81,11 @@
 	"Item.h"
 	<iostream>
 
+<<<<<<< HEAD
 1464733159 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
+=======
+1464522967 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
+>>>>>>> 166e155f48f2811ec70ca9704e4fe543850af0d0
 	"KNP.h"
 	"Shop.h"
 	<list>
