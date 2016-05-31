@@ -15,7 +15,8 @@ void KNP::set_backpack(Backpack & backpack){
 
 void KNP::Thief(){
     Shop sklep = Find_best_shop();
-    KNP_approx(sklep);
+    //KNP_approx(sklep);
+    KNP_dynamic(sklep);
     cout<<"Podejscie do kradziezy od strony zlodzieja"<<endl;
     cout<<"******************************************"<<endl;
     cout<<"Wybrany sklep: "<<endl;
@@ -74,6 +75,29 @@ void KNP::KNP_approx(Shop shop){
     }
 }
 
+void KNP::KNP_dynamic(Shop shop)
+{
+    int n = shop.get_number_of_items();
+    int W=backpack->get_capacity();
+
+    int i,w;
+    int K[n+1][W+1];
+
+for(i=0;i<shop.get_number_of_items();i++)
+{
+    for(w=0;w<=backpack->get_capacity();w++)
+{
+    if(i==0|| w==0)
+        K[i][w]=0;
+        else if (shop.get_Item_array()[i-1].get_size()<=w)
+            K[i][w]=max(shop.get_Item_array()[i-1].get_value() + K[i-1][w-shop.get_Item_array()[i-1].get_size()], K[i-1][w]);
+        else
+            K[i][w]=K[i-1][w];
+}
+cout << K[n+1][W+1] << " ";
+//backpack->add(K[n][W]);
+}
+}
 void KNP::KNP_bruteforce(){
     /*
     int* used_item = new int[shop.get_number_of_items()];

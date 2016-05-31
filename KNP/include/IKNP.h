@@ -7,6 +7,7 @@ class IKNP
     public:
         virtual void KNP_approx(Shop shop)=0;
         virtual void KNP_bruteforce()=0;
+        virtual void KNP_dynamic(Shop shop)=0;
         virtual void KNP_bruteforce_source(int numer_wywolania, int* used_item, int* item_set, int & suma_wartosci)=0;
 };
 

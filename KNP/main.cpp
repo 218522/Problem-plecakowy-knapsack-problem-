@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+
     Shop Shop1, Shop2, Shop3, Shop4;
     KNP KNP_problem;
     Backpack plecak;
@@ -23,6 +24,7 @@ int main()
     KNP_problem.add_shop(Shop3);
     KNP_problem.add_shop(Shop4);
 
-    KNP_problem.Thief();
+    KNP_problem.KNP_dynamic(Shop3);//Thief();
     return 0;
+
 }
