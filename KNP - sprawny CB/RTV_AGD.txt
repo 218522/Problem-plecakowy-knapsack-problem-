@@ -1,6 +1,6 @@
 4
 RTV_AGD
-Telewizor 8 5
-Toster 4 3
 Baterie 1 1
-Kabel 3 1
+Kabel 3 2
+Toster 4 3
+Telewizor 8 5
