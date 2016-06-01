@@ -42,19 +42,21 @@
 	<string>
 	"Item.h"
 
-1464127214 D
+1464345892 D
 
-1464126305 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\backpack.cpp
+1464182047 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\backpack.cpp
 	"Backpack.h"
 	<iostream>
 
-<<<<<<< HEAD
-1464732958 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\main.cpp
-=======
 1464345892 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\main.cpp
->>>>>>> 166e155f48f2811ec70ca9704e4fe543850af0d0
+
+1464522967 e155f48f2811ec70ca9704e4fe543850af0d0
 	<iostream>
 	"KNP.h"
+	"KNP.h"
+	"Shop.h"
+	<list>
+	<iostream>
 
 1464517507 c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\include\knp.h
 	"IKNP.h"
@@ -81,15 +83,7 @@
 	"Item.h"
 	<iostream>
 
-<<<<<<< HEAD
-1464733159 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
-=======
 1464522967 source:c:\users\pitag\desktop\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
->>>>>>> 166e155f48f2811ec70ca9704e4fe543850af0d0
-	"KNP.h"
-	"Shop.h"
-	<list>
-	<iostream>
 
 1464122767 a73d60d607abc9c9c5470baad3dbe4d537f99
 	"Backpack.h"
@@ -111,7 +105,11 @@
 	"Item.h"
 	<iostream>
 
-1464181825 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
+1464789414 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\src\knp.cpp
+	"KNP.h"
+	"Shop.h"
+	<list>
+	<iostream>
 	"KNP.h"
 	"Shop.h"
 	<list>
@@ -122,7 +120,7 @@
 	<fstream>
 	<iostream>
 
-1464181526 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\knp.h
+1464644722 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\knp.h
 	"IKNP.h"
 	<vector>
 	"Shop.h"
@@ -142,11 +140,11 @@
 	<fstream>
 	<iostream>
 
-1464181922 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\main.cpp
+1464789642 source:c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\main.cpp
 	<iostream>
 	"KNP.h"
 
-1464172358 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\iknp.h
+1464644722 c:\users\michal\desktop\git\problem-plecakowy-knapsack-problem-\knp\include\iknp.h
 	"Shop.h"
 
 1464342292 source:/home/piotr/Desktop/GitHub/Backpack/Problem-plecakowy-knapsack-problem-/KNP/main.cpp

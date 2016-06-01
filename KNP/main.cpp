@@ -24,7 +24,7 @@ int main()
     KNP_problem.add_shop(Shop3);
     KNP_problem.add_shop(Shop4);
 
-    KNP_problem.KNP_dynamic(Shop3);//Thief();
+    KNP_problem.KNP_dynamic(Shop3);
     return 0;
 
 }
