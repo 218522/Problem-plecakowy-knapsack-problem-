@@ -1,5 +1,0 @@
-3
-Jubiler
-pierscionek 4 10
-wisiorek 2 8
-kolczyki 2 7

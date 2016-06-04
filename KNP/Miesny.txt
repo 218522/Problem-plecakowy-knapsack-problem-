@@ -1,6 +1,0 @@
-4
-Miesny
-Kurczak 2 2
-Wolowina 5 3
-Kaczka	4 2
-Salceson 2 3
