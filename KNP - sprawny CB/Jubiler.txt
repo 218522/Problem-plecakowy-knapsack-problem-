@@ -1,6 +1,0 @@
-4
-Jubiler
-Pierscionek 8 1
-Wisiorek 8 2
-Piryt 1 4
-Piryt 2 5

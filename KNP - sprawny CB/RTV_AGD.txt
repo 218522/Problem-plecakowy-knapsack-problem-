@@ -1,6 +1,0 @@
-4
-RTV_AGD
-Baterie 1 1
-Kabel 3 2
-Toster 4 3
-Telewizor 8 5
